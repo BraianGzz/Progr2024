@@ -16,14 +16,14 @@ public class Gestiondeempleados {
         Empleado emp1 = new Empleado ("Juan","Ortega",35,1000);
         
         
-        System.out.println("1. Informacion completa con salario");
-        System.out.println("2. Informacion sin salario");
+        System.out.println("Presione (1)para ver informacion completa con salario");
+        System.out.println("Presione (2) para ver Informacion sin salario");
         int opcion = entrada.nextInt();
         
         if(opcion == 1){
-            emp1.mostrarInfoCom();
+            emp1.mostrarInfo(emp1.nombre, emp1.apellido, emp1.edad, emp1.salario);
         }else if(opcion == 2){
-            emp1.mostrarInfoInc();
+            emp1.mostrarInfo(emp1.nombre, emp1.apellido, emp1.edad);
             System.exit(0);
         }else{
             System.out.println("Opcion no valida");
@@ -39,7 +39,7 @@ public class Gestiondeempleados {
             System.out.println("Ingrese el porcentaje a aumentar:");
             double aumento = entrada.nextDouble();
             emp1.aumentarSalario(aumento);
-            emp1.mostrarInfoCom();
+            emp1.mostrarInfo(emp1.nombre, emp1.apellido, emp1.edad, emp1.salario);
         } else {
             System.out.println("Gracias por usar el programa.");
         }

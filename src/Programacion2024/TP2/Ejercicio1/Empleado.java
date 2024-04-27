@@ -16,7 +16,7 @@ public class Empleado {
     }
 
     //metodo para mostrar la informacion con salario
-    public void mostrarInfoCom(){
+    public void mostrarInfo(String nombre, String apellido, int edad, double salario){
         System.out.println("La informacion del empleado es:");
         System.out.println("Nombre:" + nombre);
         System.out.println("Apellido:" + apellido);
@@ -25,7 +25,7 @@ public class Empleado {
     }
     
     //metodo para mostrar la informacion sin salrio
-    public void mostrarInfoInc(){
+    public void mostrarInfo(String nombre, String apellido, int edad){
         System.out.println("La informacion del empleado es:");
         System.out.println("Nombre:" + nombre);
         System.out.println("Apellido:" + apellido);
