@@ -43,6 +43,5 @@ public class Gestiondeempleados {
         } else {
             System.out.println("Gracias por usar el programa.");
         }
-    }
-    
+    }   
 }

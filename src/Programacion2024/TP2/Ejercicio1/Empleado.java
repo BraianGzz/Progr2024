@@ -1,5 +1,6 @@
 package Programacion2024.TP2.Ejercicio1;
 
+
 //clase
 public class Empleado {
     String nombre;
