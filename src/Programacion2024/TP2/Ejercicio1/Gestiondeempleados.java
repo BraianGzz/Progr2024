@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Gestiondeempleados {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         
         Scanner entrada = new Scanner(System.in);
         
@@ -16,8 +16,8 @@ public class Gestiondeempleados {
         Empleado emp1 = new Empleado ("Juan","Ortega",35,1000);
         
         
-        System.out.println("Presione (1)para ver informacion completa con salario");
-        System.out.println("Presione (2) para ver Informacion sin salario");
+        System.out.println("Presione (1) para mostrar Informacion completa con salario");
+        System.out.println("Presione (2) para mostrar Informacion sin salario");
         int opcion = entrada.nextInt();
         
         if(opcion == 1){
@@ -43,5 +43,9 @@ public class Gestiondeempleados {
         } else {
             System.out.println("Gracias por usar el programa.");
         }
-    }   
+        
+        
+        
+    }
+    
 }

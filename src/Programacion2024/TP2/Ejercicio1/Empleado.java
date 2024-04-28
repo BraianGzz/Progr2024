@@ -1,6 +1,5 @@
 package Programacion2024.TP2.Ejercicio1;
 
-
 //clase
 public class Empleado {
     String nombre;
@@ -31,6 +30,7 @@ public class Empleado {
         System.out.println("Nombre:" + nombre);
         System.out.println("Apellido:" + apellido);
         System.out.println("Edad:" + edad);
+        
     }
     
     //metodo aumentar salario
