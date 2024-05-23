@@ -12,6 +12,7 @@ public class Verificacion {
             System.out.println("La contrasenia tiene mas de 8 caracteres.");
         }else if(contraseña.length() < 8){
             System.out.println("La contrasenia debe tener mas de 8 caracteres.");
+            generarContra();
             System.exit(0);
         }
     }
@@ -30,6 +31,7 @@ public class Verificacion {
             System.out.println("La contrasenia posee numeros.");
         }else{
             System.out.println("La contrasenia debe poseer numeros.");
+            generarContra();
             System.exit(0);
         }
     }
@@ -49,6 +51,7 @@ public class Verificacion {
             System.out.println("La contrasenia posee digitos especiales.");
         }else{
             System.out.println("La contrasenia debe poseer digitos especiales.");
+            generarContra();
             System.exit(0);
         }
     }

@@ -13,7 +13,6 @@ public class Contraseñasegura {
         v1.ochoCarcteres();
         v1.digitoNumerico();        
         v1.caracterEspecial();
-        v1.generarContra();
     }
     
 }
