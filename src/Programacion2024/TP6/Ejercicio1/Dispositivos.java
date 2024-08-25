@@ -3,8 +3,8 @@ package Programacion2024.TP6.Ejercicio1;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Dispositivos implements HistorialEstados {
-    private boolean encendido;
+public abstract class Dispositivos {
+    protected boolean encendido;
     protected List<String> historialEstado;
 
     public Dispositivos() {
@@ -12,24 +12,14 @@ public abstract class Dispositivos implements HistorialEstados {
         this.historialEstado = new ArrayList<>();
     }
     
-    public void encender() {
-        encendido = true;
-        guardarEstado("Encendido");
-    }
+    public abstract void encender();
     
-    public void apagar() {
-        encendido = false;
-        guardarEstado("Apagado");
-    }
+    public abstract void apagar();
     
-
-
-    @Override
     public void guardarEstado(String estado) {
         historialEstado.add(estado);
     }
 
-    @Override
     public List<String> getHistorialEstados() {
         return historialEstado;
     }

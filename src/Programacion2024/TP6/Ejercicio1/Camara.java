@@ -1,41 +1,35 @@
 package Programacion2024.TP6.Ejercicio1;
 
-public class Camara extends Dispositivos implements HistorialEstados{
-    private boolean grabando;
+public class Camara extends Dispositivos{
 
 
     public Camara() {
         super();
-        this.grabando = false;
-
 
     }
     
     public void iniciarGrabacion() {
-        grabando = true;
         System.out.println("Iniciando grabacion");
        guardarEstado("Grabacion iniciada");
     }
 
     public void detenerGrabacion() {
-        grabando = false;
         System.out.println("Pausando grabacion");
         guardarEstado("Grabacion detenida");
     }
     
     @Override
     public void encender() {
-        super.encender();
+        this.encendido = true;
+        guardarEstado("Encendido");
         System.out.println("Encendiendo camara");
     }
 
     @Override
     public void apagar() {
-        super.apagar();
+        this.encendido = false;
+        guardarEstado("Apagado");
         System.out.println("apagando camara");
     }
-
-
-
 
 }

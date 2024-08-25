@@ -2,7 +2,7 @@ package Programacion2024.TP6.Ejercicio1;
 
 
 
-public class SensorTemperatura extends Dispositivos implements HistorialEstados {
+public class SensorTemperatura extends Dispositivos  {
     private int temperaturaActual;
 
 
@@ -20,13 +20,15 @@ public class SensorTemperatura extends Dispositivos implements HistorialEstados 
     
     @Override
     public void encender() {
-        super.encender();
+        this.encendido = true;
+        guardarEstado("Encendido");
         System.out.println("Encendiendo sensor");
     }
 
     @Override
     public void apagar() {
-        super.apagar();
+        this.encendido = false;
+        guardarEstado("Apagado");
         System.out.println("Apagando sensor");
     }
 
